@@ -51,20 +51,56 @@ body {
     border: 1px solid #ddd; /* adicionar aspecto de quadro */
 }
 
-header {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.sobre-conteudo {
+.sobre-conteudo, .formacao-conteudo, .porfolio-conteudo {
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
+/* style para o formulario */
+
+/* style.css */
+
+.contato-container {
+    max-width: 400px;
+    margin: 50px auto;
+    font-family: sans-serif;
+}
+
+h2 {
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #292929;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: #D0D0D0;
+}
+
+#status {
+    color: green;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
 /* responsividade simples para celular */
 @media (max-width: 600px) {
-    .sobre-conteudo {
+    .sobre-conteudo, .formacao-conteudo, .portfolio-conteudo, .contato-conteudo {
         flex-direction: column;
         text-align: center;
     }
