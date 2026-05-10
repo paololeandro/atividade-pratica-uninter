@@ -1,0 +1,115 @@
+body {
+  margin-top: 60px; /* margem para evitar que o conteudo fique escondido */
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #000;
+  z-index: 1000;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* aqui os itens sao centralizados */
+  margin: 0;
+  padding: 10px 0;
+}
+
+.menu li {
+  margin: 0 5px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  padding: 8px 15px;
+  border: 1px solid #000;
+  font-family: sans-serif;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  background-color: #D0D0D0; /* efeito de passar o mouse */
+}
+
+.menu a.active {
+  background-color: #292929; /* cor quando o menu está ativo */
+  color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    padding: 20px;
+    line-height: 1.6;
+    border: 1px solid #ddd; /* adicionar aspecto de quadro */
+}
+
+.sobre-conteudo, .formacao-conteudo, .porfolio-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* a partir daqui sao estilos do formulario */
+
+.contato-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.campo input, .campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* para o padding nao aumentar o tamanho do campo */
+}
+
+.erro {
+    color: red;
+    font-size: 0.8rem;
+    display: none; /* esconde a mensagem de error por padrão */
+}
+
+#sucesso {
+    display:none; /* esconde a mensagem por padrao */ 
+    color: green; 
+    margin-top: 20px;
+}
+
+button {
+    background-color: #292929;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #555555;
+}
+
+/* responsividade simples para celular */
+@media (max-width: 600px) {
+    .sobre-conteudo, .formacao-conteudo, .portfolio-conteudo, .contato-conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+}
