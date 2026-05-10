@@ -7,23 +7,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-      <nav class="menu">
-        <ul>
-          <li><a href="sobre.html">Sobre mim</a></li>
-          <li><a href="formacao.html">Formação</a></li>
-          <li><a href="portfolio.html" class="active">Portfólio</a></li>
-          <li><a href="contato.html">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
-    
-    <main>
 
-    </main>
-    
-    <footer>
+  <nav class="menu"> <!-- estrutura de links consistente em todas as páginas para o menu-->
+    <ul>
+      <li><a href="sobre.html">Sobre mim</a></li>
+      <li><a href="formacao.html">Formação</a></li>
+      <li><a href="portfolio.html" class="active">Portfólio</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
 
-    </footer>
+  <main class="container">
+    <section class="portfolio-conteudo">
+        <div class="texto">
+            <h2>Links Projetos Github</h2>
+            <p>Meus DOTFILES</p>
+            <p><a href="https://github.com/paololeandro/dotfiles" target="_blank">https://github.com/paololeandro/dotfiles</a></p>
+            <p>Dotfiles são arquivos de configuração em sistemas Unix-like (Linux/macOS). Eles servem para definir preferências de aplicativos, terminais e editores, sendo fundamentais para 
+            personalizar o ambiente e sincronizar configurações entre máquinas via Git.</p>
+
+            <p>Playbook Ansible</p>
+            <p><a href="https://github.com/paololeandro/ansible" target="_blank">https://github.com/paololeandro/ansible</a></p>
+            <p>Arquivo de configuração escrito em YAML que define um conjunto de tarefas automatizadas a serem executadas em servidores remotos ou locais. Neste caso ele está automatizando a 
+            instalação dos meus softwares e deploy das minhas aplicações em meu ambiente Linux</p>
+        </div>
+    </section>
+  </main>
+
 </body>
 </html>
