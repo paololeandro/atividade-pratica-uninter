@@ -33,29 +33,5 @@
     </section>
   </main>
 
-  <script> // adicionado de forma inline por ser simples, aqui só precisamos interceptar o clique para mostrar que o envio funcionou, ja que a validacao dos campos requeridos esta no html
-    const form = document.getElementById('contatoForm');
-    const status = document.getElementById('status');
-    const btn = document.getElementById('btn');
-
-      form.addEventListener('submit', function(e) {
-        e.preventDefault(); // nao recarrega a página
-
-        // simulacao do envio
-        btn.innerText = "Enviando...";
-        btn.disabled = true;
-
-        setTimeout(() => {
-            status.innerText = "Mensagem enviada com sucesso!";
-            status.style.display = "block";
-            
-            btn.innerText = "Enviar";
-            btn.disabled = false;
-            
-            form.reset(); // aqui limpamos os campos após o envio
-        }, 1000);
-      });
-  </script>
-
 </body>
 </html>
